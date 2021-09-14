@@ -93,7 +93,7 @@ describe VimeoMe2::Video do
       expect(@own_video.name).to eq("new name")
     end
 
-    it "is posisble to delete an existing video" do
+    it "is possible to delete an existing video" do
       VCR.use_cassette("vimeo-video-delete") do
         @delete_video.destroy
       end
